@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>EB</title>
+  <link href="img/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+  <link rel="stylesheet" href="style/normalize.min.css">
+  <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+  <header class="page-header">
+    <div class="topbar-wrapper">
+      <a class="page-header__logo" href="index.html">
+        <img src="img/logo.png" alt="logo" width="69" height="20">
+      </a>
+      <span class="number">73</span>
+      <ul class="top-menu">
+        <li class="top-menu__item top-menu__item--bus">
+          <a class="top-menu__link" href="#">Автобусы</a>
+        </li>
+        <li class="top-menu__item top-menu__item--food">
+          <a class="top-menu__link" href="#">Столовая</a>
+        </li>
+        <li class="top-menu__item top-menu__item--flors">
+          <a class="top-menu__link" href="#">Этажи</a>
+        </li>
+        <li class="top-menu__item top-menu__item--maps">
+          <a class="top-menu__link" href="#">Территории</a>
+        </li>
+      </ul>
+      <form class="main-search" action="#" method="get">
+        <input class="main-search__input" type="text" name="search" value placeholder="Поиск">
+        <button class="main-search__btn" type="button" name="button"></button>
+      </form>
+      <ul class="user-block">
+        <li class="user-block__mail">
+          <a class="user-block__mail-link" href="#">
+            <small class="user-block__small">12</small>
+          </a>
+        </li>
+        <li class="user-block__account">
+          <div class="user-block__account-img-werapper">
+            <img class="user-block__account-img" src="img/user.jpg" alt="user">
+          </div>
+          <span class="user-block__account-name">Александр</span>
+        </li>
+      </ul>
+    </div>
+    <ul class="main-menu">
+      <li class="main-menu__item">
+        <a class="main-menu__link main-menu__link--active" href="">Наша компания</a>
+      </li>
+      <li class="main-menu__item">
+        <a class="main-menu__link" href="#">наша команда</a>
+      </li>
+      <li class="main-menu__item">
+        <a class="main-menu__link" href="#">Моя безопасность</a>
+      </li>
+      <li class="main-menu__item">
+        <a class="main-menu__link" href="#">Управляющая компания</a>
+      </li>
+      <li class="main-menu__item">
+        <a class="main-menu__link" href="#">наши предприятия</a>
+      </li>
+      <li class="main-menu__item">
+        <a class="main-menu__link" href="#">Справочники</a>
+      </li>
+      <li class="main-menu__item">
+        <a class="main-menu__link" href="#">Сервисы</a>
+      </li>
+    </ul>
+  </header>
+  <main>
+    <section class="promo">
+      <div class="promo-left-wrapper">
+        <article class="video-block">
+          <div class="video-wrapper">
+            <video class="video" preload="none">
+                <source src="video/#.ogv" type="video/ogg">
+              </video>
+            <div class="video__controls">
+              <button class="video__toggler" type="button"></button>
+            </div>
+          </div>
+          <div class="video-text-wrapper">
+            <h3 class="video__chanel">Евраз тв</h3>
+            <p class="video__text">65-летие Рельсобалочного цеха ЕВРАЗ НТМК</p>
+          </div>
+        </article>
+        <blockquote class="quote">
+          <h4 class="quote__author-name">Иванов Алексей</h4>
+          <p class="quote__text">Мы все хотим, чтобы ЕВРАЗ был эффективной компанией с высоким уровнем безопасности труда, ориентированной на запросы клиентов, поставляющей продукцию высокого качества...</p>
+          <cite class="quote__author-position">Старший Вице-президент,<br /> блок коммерции и развития бизнеса</cite>
+        </blockquote>
+      </div>
+      <article class="sidebar">
+        <ul class="sidebar__list">
+          <li class="sidebar__item sidebar__item--person">
+            <b class="sidebar__name-person">Царенко Владимир</b>
+            <p class="sidebar__posotion-person">Главный специалист ЕвразХолдинг</p>
+          </li>
+          <li class="sidebar__item sidebar__item--attention">
+            <time class="sidebar__date" datetime="2017-12-12">12 декабря</time>
+            <a class="sidebar__text sidebar__text--attention" href="#">Встреча с представителями банка ВТБ24</a>
+          </li>
+          <li class="sidebar__item sidebar__item--event">
+            <time class="sidebar__date" datetime="2018-01-13">13 января</time>
+            <a class="sidebar__text" href="#">О проведении в 2017 году соревнований по горным лыжам и сноуборду имени Андрея Севенюка</a>
+          </li>
+        </ul>
+      </article>
+    </section>
+    <section class="slider">
+      <div class="slider__nav">
+        <div class="slider-controls">
+          <button class="slider-controls__item slider-controls__item--prev" type="button">Назад</button>
+          <button class="slider-controls__item slider-controls__item--next" type="button">Вперед</button>
+        </div>
+        <ul class="slider-indicator">
+          <li class="slider-indicator__item"></li>
+          <li class="slider-indicator__item slider-indicator__item--active"></li>
+          <li class="slider-indicator__item"></li>
+          <li class="slider-indicator__item"></li>
+          <li class="slider-indicator__item"></li>
+        </ul>
+      </div>
+      <div class="slider__row">
+        <figure class="slider__kard">
+          <a class="slider__kard-link" href="#">
+            <picture>
+              <source type="image/webp" srcset="img/slider-1.webp, img/slider-1@2x.webp 2x">
+              <img class="slider__kard-img" src="img/slider-1.jpg" srcset="img/slider-1@2x.jpg 2x" alt="ЕВРАЗ" title="ЕВРАЗ передал здание шахты">
+            </picture>
+            <span class="slider__kard-sticker">юг</span>
+            <p class="slider__kard-text">ЕВРАЗ передал здание шахты "МУК-96" Междуреченску</p>
+            <time class="slider__kard-date" datetime="2017-11-13">Сегодня</time>
+          </a>
+        </figure>
+        <figure class="slider__kard">
+          <a class="slider__kard-link" href="#">
+            <picture>
+              <source type="image/webp" srcset="img/slider-2.webp, img/slider-2@2x.webp 2x">
+              <img class="slider__kard-img" src="img/slider-2.jpg" srcset="img/slider-2@2x.jpg 2x" alt="ЕВРАЗ Южкокса внедрили систему LOTO" title="ЕВРАЗ Южкокса внедрили систему LOTO">
+            </picture>
+            <span class="slider__kard-sticker">юг</span>
+            <p class="slider__kard-text">На теплоэлектроцентрале ЕВРАЗ Южкокса внедрили систему LOTO</p>
+          </a>
+        </figure>
+        <figure class="slider__kard">
+          <a class="slider__kard-link" href="#">
+            <picture>
+              <source type="image/webp" srcset="img/slider-3.webp, img/slider-3@2x.webp 2x">
+              <img class="slider__kard-img" src="img/slider-3.jpg" srcset="img/slider-3@2x.jpg 2x" alt="ЕВРАЗ ЗСМК посетили представители" title="ЕВРАЗ ЗСМК посетили представители">
+            </picture>
+            <span class="slider__kard-sticker slider__kard-sticker--red">зсмк</span>
+            <p class="slider__kard-text">ЕВРАЗ ЗСМК посетили представители ключевого дилера строительного металлопроката</p>
+            <time class="slider__kard-date" datetime="2017-11-12">Вчера</time>
+          </a>
+        </figure>
+        <figure class="slider__kard">
+          <a class="slider__kard-link" href="#">
+            <picture>
+              <source type="image/webp" srcset="img/slider-4.webp, img/slider-4@2x.webp 2x">
+              <img class="slider__kard-img" src="img/slider-4.jpg" srcset="img/slider-4@2x.jpg 2x" alt="ЕВРАЗ НТМК повышает эффеективность" title="ЕВРАЗ НТМК повышает эффеективность">
+            </picture>
+            <span class="slider__kard-sticker slider__kard-sticker--orange">нтмк</span>
+            <p class="slider__kard-text">ЕВРАЗ НТМК повышает эффеективность выплавки стали</p>
+            <time class="slider__kard-date" datetime="2017-11-13">Сегодня</time>
+          </a>
+        </figure>
+      </div>
+    </section>
+    <div class="link-wrapper">
+      <a href="#" class="link-all-news">Все новости</a>
+      <a href="#" class="link-region">Мой регион</a>
+    </div>
+  </main>
+  <footer class="main-footer">
+    <div class="footer__tagline main-footer-item">
+      <a class="main-footer__logo" href="index.html">
+        <img  class="page-header__logo-img" src="img/logo-footer.png" alt="eb" width="57" height="16">
+      </a>
+      <p class="footer__tagline-text">Мы ценим своих сотрудников и создаем возможности для их профессионального развития и карьерного роста</p>
+    </div>
+    <div class="footer__contacts main-footer-item">
+      <h4 class="contacts__title">Горячая линия</h4>
+      <ul class="contacts__list">
+        <li class="contacts__number">
+          <a href="tel:+88005558888">8-800-555-88-88</a>
+        </li>
+        <li class="contacts__region">для сотрудников российских предприятий</li>
+        <li class="contacts__number">
+          <a href="tel:+0800502118">0-800-502-118</a>
+        </li>
+        <li class="contacts__region">для сотрудников украинских предприятий</li>
+        <li class="contacts__number">
+          <a href="tel:+88000804358">8-800-080-43-58</a>
+        </li>
+        <li class="contacts__region">ля сотрудников ЕВРАЗ Каспиан Сталь</li>
+      </ul>
+      <a class="contacts__mail" href="mailto:vopros@evraz.com">vopros@evraz.com</a>
+      <a class="contacts__feedback" href="#">Написать в горячую линию</a>
+    </div>
+    <div class="footer__rialto main-footer-item">
+      <h4 class="rialto__title">Биржевые котировки</h4>
+      <time class="rialto__date" datetime="2017-12-28T12:35">28 декабря 12:35 (GMT)</time>
+      <table class="rialto__quotations-evraz">
+        <tr>
+          <td class="first-column quotations-evraz__title">Evraz (lse)</td>
+          <td class="second-column">Открытие <span>221.00</span></td>
+        </tr>
+        <tr>
+          <td class="first-column quotations-price">225.10 <span>Gbx</span></td>
+          <td class="second-column">Максимум <span>238.80</span></td>
+        </tr>
+        <tr>
+          <td class="first-column quotations-exchange">1.20 (0.54 %)</td>
+          <td class="second-column">Минимум <span>221.00</span></td>
+        </tr>
+      </table>
+      <table class="rialto__quotations-raspadskaya">
+        <tr>
+          <td class="first-column quotations-raspadskaya__title">Raspadskaya (MCX):</td>
+          <td class="second-column">Открытие <span>221.00</span></td>
+        </tr>
+        <tr>
+          <td class="first-column quotations-price">78.96 <span>Gbx</span></td>
+          <td class="second-column">Максимум <span>238.80</span></td>
+        </tr>
+        <tr>
+          <td class="first-column quotations-exchange">0.65 (0.83 %)</td>
+          <td class="second-column">Минимум <span>221.00</span></td>
+        </tr>
+      </table>
+    </div>
+    <div class="footer__menu-wrapper main-footer-item">
+      <h4 class="footer__menu-title">Портал</h4>
+      <ul class="footer__menu-list">
+        <li>
+          <a class="footer__menu-link" href="#">Обратная связь</a>
+        </li>
+        <li>
+          <a class="footer__menu-link" href="#">Карта разделов портала</a>
+        </li>
+        <li>
+          <a class="footer__menu-link" href="#">Заявка в Service Desk</a>
+        </li>
+        <li>
+          <a class="footer__menu-link" href="#">Помощь</a>
+        </li>
+        <li>
+          <a class="footer__menu-link" href="#">Команда</a>
+        </li>
+      </ul>
+      <p class="footer__menu-text">
+        Если вы нашли ошибку, выделите ее курсором, нажмите одновременно клавиши «CTRL» и «ENTER» и мы скорректируем неточность.
+      </p>
+    </div>
+  </footer>
+  <script src="js/picturefill.min.js"></script>
+</body>
+
+</html>
